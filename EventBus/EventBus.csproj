@@ -1,35 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
-
-  <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
-  </PropertyGroup>
-
-  <ItemGroup>
-    <None Remove="Abstract\" />
-    <None Remove="Concrete\" />
-    <None Remove="Contract\" />
-    <None Remove="Microsoft.Extensions.Configuration" />
-    <None Remove="MediatR" />
-    <None Remove="Microsoft.Extensions.DependencyInjection" />
-    <None Remove="Newtonsoft.Json" />
-    <None Remove="RabbitMQ.Client" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Abstract\">
-      <DependentUpon>Abstract</DependentUpon>
-    </Folder>
-    <Folder Include="Concrete\">
-      <DependentUpon>Concrete</DependentUpon>
-    </Folder>
-    <Folder Include="Contract\">
-      <DependentUpon>Contract</DependentUpon>
-    </Folder>
-  </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="Microsoft.Extensions.Configuration" Version="5.0.0" />
-    <PackageReference Include="MediatR" Version="9.0.0" />
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="5.0.2" />
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
-    <PackageReference Include="RabbitMQ.Client" Version="6.2.2" />
-  </ItemGroup>
+	<PropertyGroup>
+		<TargetFramework>net6</TargetFramework>
+	</PropertyGroup>
+	<ItemGroup>
+		<None Remove="Abstract\" />
+		<None Remove="Concrete\" />
+		<None Remove="Contract\" />
+		<None Remove="Microsoft.Extensions.Configuration" />
+		<None Remove="MediatR" />
+		<None Remove="Microsoft.Extensions.DependencyInjection" />
+		<None Remove="Newtonsoft.Json" />
+		<None Remove="RabbitMQ.Client" />
+	</ItemGroup>
+	<ItemGroup>
+		<Folder Include="Abstract\">
+		</Folder>
+		<Folder Include="Concrete\">
+		</Folder>
+		<Folder Include="Contract\">
+		</Folder>
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Extensions.Configuration" Version="6.0.1" />
+		<PackageReference Include="MediatR" Version="10.0.1" />
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.0" />
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+		<PackageReference Include="RabbitMQ.Client" Version="6.4.0" />
+	</ItemGroup>
 </Project>
